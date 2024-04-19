@@ -5,7 +5,7 @@ blog/django
 python -m venv env 
 pip install django-admin
 pip install django
-'''
+'''bash
 
 django-admin startproject projectname
 cd /root/project/name
