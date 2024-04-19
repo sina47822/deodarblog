@@ -1,0 +1,2 @@
+# deodarblog
+blog/django
