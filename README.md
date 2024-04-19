@@ -1,9 +1,11 @@
 # deodarblog
 blog/django
 
+'''bash
 python -m venv env 
 pip install django-admin
 pip install django
+'''
 
 django-admin startproject projectname
 cd /root/project/name
