@@ -1,0 +1,16 @@
+<ul class="navbar-nav me-auto mb-2 mb-md-0">
+    {% for menu_item in main_menu %}
+    <li class="nav-item active">
+        <a class="nav-link active" href="{{menu_item.link}}">{{menu_item.title}}</a>
+        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="{{ item.menuname }}">
+            {% for sub_item in submenu %}
+                
+                {% if sub_item.main_menu == menu_item.id %}
+                    <li><a href="{{ sub_item.link }}">{{ sub_item.title}}</a></li>
+                {% endif %}
+            {% endfor %}
+
+        </ul>
+    </li> 
+    {% endfor %}
+  </ul>
